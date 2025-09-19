@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.sqlite3
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment files
+*.env
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Cache
+*.cache
+.cache/
+*.pytest_cache/
+*.mypy_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Node.js (if frontend uses it)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Database (if using SQLite locally)
+*.sqlite
+*.sqlite3
+
+# Local configs
+config.json

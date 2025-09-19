@@ -1,0 +1,94 @@
+/* Layout */
+.dashboard {
+  background-color: #0f172a;
+  min-height: 100vh;
+  color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: #1e293b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #60a5fa;
+}
+.user-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.logout-btn {
+  background: #ef4444;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* Main Layout */
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* Cards */
+.card {
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.placeholder {
+  color: #64748b;
+  font-style: italic;
+}
+
+/* Editor Section */
+.editor-card {
+  display: flex;
+  flex-direction: column;
+}
+.controls {
+  margin-top: 1rem;
+  text-align: right;
+}
+.review-btn {
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.review-btn:hover {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+}
+.review-btn:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
