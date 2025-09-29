@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import api from "../../services/api"; // Use shared api instance
 
 const ResetPassword = () => {
   const [email, setEmail] = useState("");
@@ -15,7 +15,7 @@ const ResetPassword = () => {
       return;
     }
     try {
-      await axios.post("http://127.0.0.1:8000/auth/reset-password", {
+      await api.post("/auth/reset-password", {
         email,
         otp,
         new_password: newPassword,

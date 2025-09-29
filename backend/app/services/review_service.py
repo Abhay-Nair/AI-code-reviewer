@@ -54,6 +54,9 @@ def analyze_code_ai(code: str, language: str):
 def review_code(code: str):
     language = detect_language(code)
     ai_feedback = analyze_code_ai(code, language)
+    if isinstance(ai_feedback, dict):
+        ai_feedback["language"] = language
+    return ai_feedback
 
     # Basic scoring idea
     score = 80  # later can auto adjust based on issue severity

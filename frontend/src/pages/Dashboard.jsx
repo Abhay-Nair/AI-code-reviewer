@@ -81,7 +81,7 @@ export default function Dashboard() {
         </div>
       </header>
 
-      {/* Main Content */}
+       {/* Main Content */}
       <main className="flex-1 p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Editor Section */}
         <section className="editor-section bg-white shadow rounded-lg p-4 flex flex-col">
@@ -120,6 +120,12 @@ export default function Dashboard() {
           )}
         </section>
       </main>
+
+      {/* Review History Section */}
+      <section className="history-section bg-white shadow rounded-lg p-4 m-6">
+        <h2 className="text-lg font-semibold mb-2">Review History</h2>
+        <ReviewHistory history={history} />
+      </section>
     </div>
   );
 }
